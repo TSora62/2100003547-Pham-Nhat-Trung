@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Thanh menu phía trên -->
+    <header>
+        <div class="menu">
+            <img src="T1.png" alt="T1" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="achievements.html">Thành tích</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside class="left-aside">
+            <h2>Thông tin cá nhân</h2>
+            <img src="Faker.jpg" alt="Ảnh đại diện" class="avatar">
+            <p><strong>Tên:</strong> Phạm Nhật Trung</p>
+            <p><strong>Ngày sinh:</strong> 06/02/2003</p>
+            <p><strong>Sinh viên học trường:</strong></p> 
+                <ul>
+                <li>Đại học Nguyễn Tất Thành</li>
+                </ul>
+            <p><strong>Sở thích:</strong></p>
+            <ul>
+                <li>Du Lịch</li>
+                <li>Đọc Sách</li>
+                <li>Chơi Game</li>
+                <li>Lập Trình</li>
+            </ul>
+            <p><strong>Nơi sinh sống:</strong></p>
+            <ul>
+                <li>Thành phố Hồ Chí Minh</li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h1>Liên Hệ</h1>
+            <p>Nếu bạn có thắc mắc gì thì xin hãy liên hệ với tôi thông qua các thông tin liên hệ dưới đây</p>
+            <ul>
+                <li>SĐT: 0774240339</li>
+                <li>Email: trungtommy.ntp@gmail.com</li>
+            </ul>
+            <p>Hoặc mọi người có thể điền form bên dưới để có thể hỏi hoặc thắc mắc về các vấn đề mà mọi người muốn đề cập</p>
+
+            <form action="submit_form.php" method="post">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+
+        <aside class="right-aside">
+            <h2>Xe yêu thích</h2>
+            <ul>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Audi_R8" target="_blank" class="car-link">
+                    <img src="audi r8.jpg" alt="Xe 1">
+                    <p>Audi R8</p> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.audi-mediacenter.com/en/audi-rs-7-sportback-49" target="_blank" class="car-link">
+                    <img src="audi rs7.jpg" alt="Xe 2">
+                    <p>Audi RS7 Sportback</p>
+                </a>
+                </li>
+                <!-- Thêm các xe yêu thích khác ở đây -->
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Phạm Nhật Trung.Copyright.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

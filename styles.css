@@ -1,0 +1,154 @@
+/* Cài đặt màu sắc và kiểu chữ cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #dadadada; /* Màu nền sáng để nổi bật với màu xanh */
+}
+
+header {
+    background-color: #003366; /* Xanh nước biển đậm cho thanh menu */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    text-shadow: #333;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.left-aside {
+    width: 220px;
+    background-color: #e6f2ff; /* Màu xanh nhạt cho nền aside bên trái */
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.left-aside .avatar {
+    display: block; /* Đảm bảo ảnh là một khối để căn giữa */
+    margin: 0 auto; /* Căn giữa ảnh đại diện */
+    width: 130px; /* Đặt chiều rộng cho ảnh, tùy chỉnh theo ý bạn */
+    height: auto; /* Đảm bảo tỷ lệ ảnh không bị thay đổi */
+    
+}
+
+.right-aside {
+    width: 220px;
+    background-color: #e6f2ff; /* Màu xanh nhạt cho nền aside bên phải */
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.right-aside ul li img {
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.right-aside ul li img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.right-aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+footer {
+    background-color: #003366; /* Xanh nước biển đậm cho footer */
+    color: #fff;
+    text-align: left;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.avatar:hover {
+    justify-content:center ;
+    transform: scale(1.1);
+}
+.content, .left-aside, .right-aside {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 1;
+}
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.car-link {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-link:hover .car {
+    transform: scale(1.1);
+}
+.menu nav ul li a {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Xóa gạch chân mặc định */
+   
+}
+.menu nav ul li a:hover {
+    transform: scale(1.2); /* Phóng to liên kết */
+    color: #0affeb; /* Đổi màu chữ khi hover */
+}
+
